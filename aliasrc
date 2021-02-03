@@ -1,0 +1,7 @@
+#!/bin/sh
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias la='pwd && ls -lAFh --time-style="+%Y-%m-%d %H:%M:%S"'
+alias vim='vim -u /etc/env/vimrc'
