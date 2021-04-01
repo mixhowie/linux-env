@@ -2,10 +2,12 @@
 
 source /etc/env/aliasrc
 
+unset HISTCONTROL
+
 export HISTSIZE=3000
 export HISTTIMEFORMAT="%F %T "
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-unset HISTCONTROL
+export PROMPT='%(!.%{%F{yellow}%}.)$USER@%{$fg[white]%}%M ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/usr/java/jdk1.8.0_131/bin
